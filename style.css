@@ -34,7 +34,6 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-
     max-width: 1110px;
     margin-inline: auto;
 }
@@ -49,10 +48,10 @@ header button{
 header nav.mobile{
     position: fixed;
     background-color: var(--almost-white);
-    right: 0;
+    right: -16rem;
     top: 0;
     height: 100vh;
-    width: -16rem;
+    width: 16rem;
     z-index: 999;
 
     display: flex;
@@ -77,7 +76,7 @@ header .mobile a{
     text-decoration: none;
     color: var(--dark-blue);
     font-size: 1.125rem;
-    line-height: 3.5rem;
+    line-height: 1.5rem;
 }
 
 header .desktop{
@@ -100,7 +99,7 @@ main {
 
 .primeira-secao h1{
     font-size: 2.5rem;
-    line-height: 100;
+    line-height: 100%;
     color: var(--dark-blue);
     margin-bottom: 1rem;
 }
@@ -126,12 +125,13 @@ main {
 
 .segunda-secao{
   background-color: var(--dark-blue);
-  margin-bottom: 4rem;
   padding: 1.5rem 1.1rem;
+  margin-bottom: 4rem;
+  
 }
 
 .margin-border-padding{
-    margin-bottom: 1px solid var(--gunmetal);
+    border-bottom: 1px solid var(--gunmetal);
     margin-bottom: 1.75rem;
     padding-bottom: 1.75rem;
 }
@@ -149,7 +149,7 @@ main {
 
 .segunda-secao h3{
     color: var(--almost-white);
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     line-height: 1.5rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
@@ -157,7 +157,7 @@ main {
 
 .segunda-secao p{
     color: var(--silver);
-    font-size: 0.9375rem;
+    font-size: 0.935rem;
     line-height: 1.625rem;
 }
 
@@ -196,26 +196,26 @@ main {
     color: var(--gunmetal);
 }
 
-@media(min-width: 1110px){
+@media(min-width: 1120px){
 
    
     header > button {
         display: none;
     }
 
-    header .desktop{
+    header.desktop{
         display: flex;
         gap: 2.5rem;
     }
 
-    header .desktop a{
+    header.desktop a{
         font-size: 0.9375rem;
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gunmetal);
     }
 
-    header .desktop a::hoover{
+    header.desktop a::hoover{
         color: var(--vermillion);
     }
 
@@ -242,10 +242,10 @@ main {
     }
 
     .primeira-secao h1{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
-    .primeira-secao buttonr::hoover{
+    .primeira-secao button:hover{
         background-color: var(--dark-blue);
         cursor: pointer;
     }
